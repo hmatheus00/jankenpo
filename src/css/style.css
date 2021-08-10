@@ -1,1 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georama', sans-serif;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.subtitulo{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+#quadro-escolhas > p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#button{
+    font-size: 18px;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: black;
+    transition: 500ms;
+}
+.text-placar{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.placar{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#frase-pronta{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#placar-usuario, #placar-maquina{
+    font-weight: bold;
+}
+
 

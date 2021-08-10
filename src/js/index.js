@@ -4,39 +4,40 @@ const opcoes = ['pedra', 'papel', 'tesoura'];
 let pontuacaoUser = 0;
 let pontuacaoMaquina = 0;
 
-const pedra = document.getElementById('pedra');
+const frasePronta = document.getElementById('frase-pronta');
+
+const placarUser = document.getElementById('placar-usuario');
+const placarMaquina = document.getElementById('placar-maquina');
 
 function comparar(button){
     let posicao = parseInt(Math.random()*3);
     let maquina = opcoes[posicao];
     let opc = button.value;
 
-    console.log(opc);
-    console.log(maquina);
+    frasePronta.innerText = `Você escolheu ${opc} e a máquina escolheu ${maquina}.`;
 
     switch(opc){
         case 'pedra':
             if(maquina === 'tesoura'){
-                pontuacaoUser++;
+                placarUser.innerText = ++pontuacaoUser;
             }else if(maquina === 'papel'){
-                pontuacaoMaquina++;
+                placarMaquina.innerText = ++pontuacaoMaquina;
             }
             break;
         case 'papel':
             if(maquina === 'pedra'){
-                pontuacaoUser++;
+                placarUser.innerText = ++pontuacaoUser;
             }else if(maquina === 'tesoura'){
-                pontuacaoMaquina++;
+                placarMaquina.innerText = ++pontuacaoMaquina;
             }
             break;
         case 'tesoura':
             if(maquina === 'papel'){
-                pontuacaoUser++;
+                placarUser.innerText = ++pontuacaoUser;
             }else if(maquina === 'pedra'){
-                pontuacaoMaquina++;
+                placarMaquina.innerText = ++pontuacaoMaquina;
             }
             break;
     }
-    console.log('Pontuacao User - ' + pontuacaoUser);
-    console.log('Pontuacao Máquina - ' + pontuacaoMaquina);
+    
 }
