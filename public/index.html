@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../src/css/style.css" />
-    <title>JokenPo</title>
-  </head>
-  <body>
-    <div id="content">
-      <h1 class="titulo">Jan Ken Po</h1>
-      <p class="subtitulo">Escolha:</p>
-      <div id="quadro-escolhas">
-        <button
-          class="opcoes"
-          value="pedra"
-          id="button"
-          onclick="comparar(this)"
-        >
-          Pedra
-        </button>
-        <button
-          class="opcoes"
-          value="papel"
-          id="button"
-          onclick="comparar(this)"
-        >
-          Papel
-        </button>
-        <button
-          class="opcoes"
-          value="tesoura"
-          id="button"
-          onclick="comparar(this)"
-        >
-          Tesoura
-        </button>
-      </div>
-      <div id="div-placar">
-        <p class="text-placar">Placar</p>
-        <p id="frase-pronta"></p>
-        <p class="placar">
-          Você <span id="placar-usuario">0</span> X
-          <span id="placar-maquina">0</span> Máquina
-        </p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <title>JokenPo</title>
+</head>
+
+<body>
+  <div id="content">
+    <h1 class="titulo">Jan Ken Po</h1>
+    <p class="subtitulo">Escolha:</p>
+    <div id="quadro-escolhas">
+      <button class="opcoes" value="pedra" id="button" onclick="comparar(this)">
+        Pedra
+      </button>
+      <button class="opcoes" value="papel" id="button" onclick="comparar(this)">
+        Papel
+      </button>
+      <button class="opcoes" value="tesoura" id="button" onclick="comparar(this)">
+        Tesoura
+      </button>
     </div>
-    <script src="../src/js/index.js"></script>
-  </body>
+    <div id="div-placar">
+      <p class="text-placar">Placar</p>
+      <p id="frase-pronta"></p>
+      <p class="placar">
+        Você <span id="placar-usuario">0</span> X
+        <span id="placar-maquina">0</span> Máquina
+      </p>
+    </div>
+  </div>
+  <script src="../src/js/index.js"></script>
+</body>
+
 </html>

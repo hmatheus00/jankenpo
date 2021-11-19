@@ -9,35 +9,35 @@ const frasePronta = document.getElementById('frase-pronta');
 const placarUser = document.getElementById('placar-usuario');
 const placarMaquina = document.getElementById('placar-maquina');
 
-function comparar(button){
-    let posicao = parseInt(Math.random()*3);
+function comparar(button) {
+    let posicao = parseInt(Math.random() * 3);
     let maquina = opcoes[posicao];
     let opc = button.value;
 
     frasePronta.innerText = `Você escolheu ${opc} e a máquina escolheu ${maquina}.`;
 
-    switch(opc){
+    switch (opc) {
         case 'pedra':
-            if(maquina === 'tesoura'){
+            if (maquina === 'tesoura') {
                 placarUser.innerText = ++pontuacaoUser;
-            }else if(maquina === 'papel'){
+            } else if (maquina === 'papel') {
                 placarMaquina.innerText = ++pontuacaoMaquina;
             }
             break;
         case 'papel':
-            if(maquina === 'pedra'){
+            if (maquina === 'pedra') {
                 placarUser.innerText = ++pontuacaoUser;
-            }else if(maquina === 'tesoura'){
+            } else if (maquina === 'tesoura') {
                 placarMaquina.innerText = ++pontuacaoMaquina;
             }
             break;
         case 'tesoura':
-            if(maquina === 'papel'){
+            if (maquina === 'papel') {
                 placarUser.innerText = ++pontuacaoUser;
-            }else if(maquina === 'pedra'){
+            } else if (maquina === 'pedra') {
                 placarMaquina.innerText = ++pontuacaoMaquina;
             }
             break;
     }
-    
+
 }
